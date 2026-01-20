@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Using the preferred forEach() function to loop through the array. And saving it to the localstorage-->
+    <title>MY-TodoList.</title>
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+  <body>
+    <p>Todo List</p>
+    <div class="display-grid">
+      <input class="js-input name-input" placeholder="Todo name" />
+      <input type="date" class="js-dueDate due-date-input" />
+      <button onclick="showTodo();" class="add-button">Add</button>
+      <div class="js-todo-html todo-html"></div>
+    </div>
+    <button class="delete-all-button" onclick="deleteAll();">Delete All</button>
+    <script src="todo.js"></script>
+  </body>
+</html>
