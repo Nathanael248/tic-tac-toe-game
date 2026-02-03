@@ -89,7 +89,7 @@ let playerMove = "X";
 
 document.querySelector(`.js-cell-0`).addEventListener("click", () => {
   let move = document.querySelector(`.js-cell-0`);
-  move.innerHTML = playerMove;
+  move.innerHTML = `<img class="move" src="${playerMove}.png" />`;
 
   const buttonId = document.querySelector(".js-cell-0").dataset.boxNo;
   board[buttonId] = playerMove;
@@ -100,7 +100,7 @@ document.querySelector(`.js-cell-0`).addEventListener("click", () => {
 
 document.querySelector(`.js-cell-1`).addEventListener("click", () => {
   let move = document.querySelector(`.js-cell-1`);
-  move.innerHTML = playerMove;
+  move.innerHTML = `<img class="move" src="${playerMove}.png" />`;
 
   const buttonId = document.querySelector(".js-cell-1").dataset.boxNo;
   board[buttonId] = playerMove;
@@ -111,7 +111,7 @@ document.querySelector(`.js-cell-1`).addEventListener("click", () => {
 
 document.querySelector(`.js-cell-2`).addEventListener("click", () => {
   let move = document.querySelector(`.js-cell-2`);
-  move.innerHTML = playerMove;
+  move.innerHTML = `<img class="move" src="${playerMove}.png" />`;
 
   const buttonId = document.querySelector(".js-cell-2").dataset.boxNo;
   board[buttonId] = playerMove;
@@ -122,7 +122,7 @@ document.querySelector(`.js-cell-2`).addEventListener("click", () => {
 
 document.querySelector(`.js-cell-3`).addEventListener("click", () => {
   let move = document.querySelector(`.js-cell-3`);
-  move.innerHTML = playerMove;
+  move.innerHTML = `<img class="move" src="${playerMove}.png" />`;
 
   const buttonId = document.querySelector(".js-cell-3").dataset.boxNo;
   board[buttonId] = playerMove;
@@ -133,7 +133,7 @@ document.querySelector(`.js-cell-3`).addEventListener("click", () => {
 
 document.querySelector(`.js-cell-4`).addEventListener("click", () => {
   let move = document.querySelector(`.js-cell-4`);
-  move.innerHTML = playerMove;
+  move.innerHTML = `<img class="move" src="${playerMove}.png" />`;
 
   const buttonId = document.querySelector(".js-cell-4").dataset.boxNo;
   board[buttonId] = playerMove;
@@ -144,7 +144,7 @@ document.querySelector(`.js-cell-4`).addEventListener("click", () => {
 
 document.querySelector(`.js-cell-5`).addEventListener("click", () => {
   let move = document.querySelector(`.js-cell-5`);
-  move.innerHTML = playerMove;
+  move.innerHTML = `<img class="move" src="${playerMove}.png" />`;
 
   const buttonId = document.querySelector(".js-cell-5").dataset.boxNo;
   board[buttonId] = playerMove;
@@ -155,7 +155,7 @@ document.querySelector(`.js-cell-5`).addEventListener("click", () => {
 
 document.querySelector(`.js-cell-6`).addEventListener("click", () => {
   let move = document.querySelector(`.js-cell-6`);
-  move.innerHTML = playerMove;
+  move.innerHTML = `<img class="move" src="${playerMove}.png" />`;
 
   const buttonId = document.querySelector(".js-cell-6").dataset.boxNo;
   board[buttonId] = playerMove;
@@ -166,7 +166,7 @@ document.querySelector(`.js-cell-6`).addEventListener("click", () => {
 
 document.querySelector(`.js-cell-7`).addEventListener("click", () => {
   let move = document.querySelector(`.js-cell-7`);
-  move.innerHTML = playerMove;
+  move.innerHTML = `<img class="move" src="${playerMove}.png" />`;
 
   const buttonId = document.querySelector(".js-cell-7").dataset.boxNo;
   board[buttonId] = playerMove;
@@ -177,7 +177,7 @@ document.querySelector(`.js-cell-7`).addEventListener("click", () => {
 
 document.querySelector(`.js-cell-8`).addEventListener("click", () => {
   let move = document.querySelector(`.js-cell-8`);
-  move.innerHTML = playerMove;
+  move.innerHTML = `<img class="move" src="${playerMove}.png" />`;
 
   const buttonId = document.querySelector(".js-cell-8").dataset.boxNo;
   board[buttonId] = playerMove;
@@ -185,8 +185,3 @@ document.querySelector(`.js-cell-8`).addEventListener("click", () => {
 
   playerMove = playerMove === "X" ? (playerMove = "O") : (playerMove = "X");
 });
-// board[2] = "string";
-// for (let i = 0; i < board.length; i++) {
-//   let move = board[i];
-// console.log("move");
-// }
