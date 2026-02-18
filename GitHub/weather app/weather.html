@@ -1,14 +1,203 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather Today</title>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css" />
   </head>
   <body>
-    <button>Weather today</button>
+    <div class="main-grid">
+      <div class="left-section">
+        <div class="left-section-detail">
+          <div class="search-bar-top">
+            <input class="search-bar" placeholder="Search for places..." />
+            <div><img class="search-icon" src="search.svg" /></div>
+          </div>
+          <div><img class="weather-image" src="weather.png" /></div>
+          <div class="temp-container">
+            <span class="temp-number">24</span>
+            <div class="units">
+              <span class="degree-symbol">&deg;</span>
+              <span class="celsius-letter">C</span>
+            </div>
+          </div>
+          <div class="day">Monday, 16:00</div>
+          <hr />
+          <div class="weather-condition">
+            <img class="weather-code" src="cloudy.png" />Mostly cloudy
+          </div>
+          <div class="weather-condition2">
+            <img class="weather-code" src="rainy-day.png" />Rain 30%
+          </div>
+          <div><img class="city-image" src="city image.jpg" /></div>
+        </div>
+      </div>
+      <div class="right-section">
+        <div class="right-section-detail">
+          <div class="top-header">
+            <div class="data-category">Today <span style="margin-left: 10px;">Week</span></div>
+            <div class="degree-unit">
+            <button class="degreeC-btn">&deg; C</button><button class="degreeF-btn">&deg; F</button>
+            </div>
+          </div>
+          <div class="days-weather">
+            <div class="day-today">
+              <span class="today">Sun</span> 
+              <img class="weather-cond-today" src="sun.png">
+              <div class="weather-cond-degrees">
+                <span >12 &deg;</span>
+                <span> -3 &deg;</span>
+              </div>
+            </div>
+            <div class="day-today">
+              <span class="today">Mon</span> 
+              <img class="weather-cond-today" src="weather.png">
+              <div class="">
+                <span >12 &deg;</span>
+                <span> -3 &deg;</span>
+              </div>
+            </div>
+            <div class="day-today">
+              <span class="today">Tue</span> <img class="weather-cond-today" src="rainy-day.png">
+              <div>
+                <span class="">12 &deg;</span>
+                <span> -3 &deg;</span>
+              </div>
+            </div>
+            <div class="day-today">
+              <span class="today">Wed</span> <img class="weather-cond-today" src="heavy-rain.png">
+              <div>
+                <span class="">12 &deg;</span>
+                <span> -3 &deg;</span>
+              </div></div>
+            <div class="day-today">
+              <span class="today">Thur</span> <img class="weather-cond-today" src="snow.png">
+              <div>
+                <span class="">12 &deg;</span>
+                <span> -3 &deg;</span>
+              </div></div>
+            <div class="day-today">
+              <span class="today">Fri</span> <img class="weather-cond-today" src="cloudy.png">
+              <div>
+                <span class="">12 &deg;</span>
+                <span> -3 &deg;</span>
+              </div>
+            </div>
+            <div class="day-today">
+              <span class="today">Sat</span> <img class="weather-cond-today" src="sun.png">
+              <div>
+                <span class="">12 &deg;</span>
+                <span> -3 &deg;</span>
+              </div>
+            </div>
+          </div>
+          <div class="today-highlight">Today's Highlights
+          </div>
+          <div class="highlight1">
+            <!-- <div class="uv-index-highlight">
+              <span class="highlight-point">Uv index</span>
+              <img class="highlight-img" src="sun.png">
+              <span class="uv-level">5</span>
+            </div> -->
+
+            <div class="uv-card">
+          <h3 class="card-title">UV Index</h3>
+          
+          <div class="gauge-wrapper">
+            <svg viewBox="0 0 200 120" class="gauge-svg">
+              <path class="gauge-track" d="M20,100 A80,80 0 0,1 180,100" fill="none" stroke="#f3f4f6" stroke-width="12" stroke-linecap="round"/>
+              <path id="uv-progress-bar" d="M20,100 A80,80 0 0,1 180,100" fill="none" stroke="#fbbf24" stroke-width="12" stroke-linecap="round" stroke-dasharray="251.2" stroke-dashoffset="251.2" style="transition: stroke-dashoffset 1s ease;"/>
+              <text x="100" y="85" id="uv-number" text-anchor="middle" font-size="30" font-weight="bold" fill="#111827">5</text>
+            </svg>
+          </div>
+          
+          <!-- <p id="uv-remark" class="remark">Moderate</p> -->
+        </div>
+
+
+
+            <div class="wind-status-highlight">
+               <span class="highlight-point">Wind status</span>
+               <div>
+
+                 <span class="wind-value">7.70</span><sub style="font-size: 18px; padding-left: 4px;">km/h</sub>
+               </div>
+              <div class="container">
+                 <span class="locator-container"><img class="locator-icon" src="map-pin.svg"></span><span style="padding-left:4px;">WSW</span>
+              </div>
+            </div>
+            <div class="sun-highlight">
+              <span class="sun-highlight-point">Sunrise & Sunset</span>
+               <div class="sun-data-container">
+                <div class="sun-rise"> 
+                  <span class="move-up-container"><img class="sunrise-icon" src="move-up.svg">
+                  </span> 
+                  <span style="display:grid;">
+
+                    <span>
+                      6:35 AM
+                    </span>
+                    <span style="font-size: 14px; color:rgb(129, 126, 126);">-1m 46s</span>
+                  </span>
+                </div>
+                <div class="sun-set">
+                <span class="move-down-container">
+                  <img src="move-down.svg" class="sunset-icon">
+                </span> 
+                <span style="display:grid;">
+                  <span>5:42 AM
+                  </span>  
+                  <span style="font-size: 14px; color:rgb(129, 126, 126);">+2m 22s</span>
+                </span>
+                </div>
+               </div>
+            </div>
+          </div>
+          <div class="highlight2">
+            <div class="humidity-highlight">
+              <span class="highlight-point">Humidity</span>
+
+              <div class="humidity-details-container">
+               <div style="display:grid; width:100px; row-gap:10px;">
+                <div class="humidity-percent-container">
+
+                  <span class="humidity-percent">12</span>
+                  <sup style="font-size: 20px;">
+                   %
+                  </sup>
+                </div>
+                 <span class="humidity-condition">Normal</span>
+               </div>
+               <div><img src=""></div>
+              </div>
+            </div>
+            <div class="visibility-highlight">
+              <span class="highlight-point">Visibility</span>
+              <div class="visibility-details">
+                <div style="display:flex; height: 44px;  align-items: end;">
+
+                  <span class="visibility-data">5.2 </span>
+                  <span style="padding-left:4px; font-size: 18px;">km</span>
+                </div>
+                <span class="visibility-condition">
+                  Average
+                </span>
+              </div>
+            </div>
+            <div  class="air-quality-highlight">
+             <span class="highlight-point">Air Quality</span>
+             <div class="air-quality-details" >
+               <span class="air-quality-data">105</span>
+               <span class="air-quality-condition">Unhealthy</span>
+             </div>
+            </div>
+          </div>
+          
+      </div>
+    </div>
     <div></div>
-    <a href="features.html"><button>Go back</button></a>
+    <!-- <a href="features.html"><button>Go back</button></a> -->
   </body>
-  <script src="scripts/weather.js"></script>
+  <!-- <script type="module" src="weather.js"></script> -->
 </html>
