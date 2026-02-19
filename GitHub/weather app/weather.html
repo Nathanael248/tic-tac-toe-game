@@ -14,7 +14,9 @@
             <input class="search-bar" placeholder="Search for places..." />
             <div><img class="search-icon" src="search.svg" /></div>
           </div>
-          <div><img class="weather-image" src="weather.png" /></div>
+          <div >
+              <img class="weather-image  js-weather-image"  />
+          </div>
           <div class="temp-container">
             <span class="temp-number">24</span>
             <div class="units">
@@ -22,7 +24,7 @@
               <span class="celsius-letter">C</span>
             </div>
           </div>
-          <div class="day">Monday, 16:00</div>
+          <div class="day js-day">Monday, 16:00</div>
           <hr />
           <div class="weather-condition">
             <img class="weather-code" src="cloudy.png" />Mostly cloudy
@@ -43,52 +45,56 @@
           </div>
           <div class="days-weather">
             <div class="day-today">
-              <span class="today">Sun</span> 
+              <span class="today js-today-1">Sun</span> 
               <img class="weather-cond-today" src="sun.png">
               <div class="weather-cond-degrees">
                 <span >12 &deg;</span>
-                <span> -3 &deg;</span>
+                <span class="min-temp-day"> -3 &deg;</span>
               </div>
             </div>
             <div class="day-today">
-              <span class="today">Mon</span> 
+              <span class="today js-today-2">Mon</span> 
               <img class="weather-cond-today" src="weather.png">
               <div class="">
-                <span >12 &deg;</span>
-                <span> -3 &deg;</span>
+                <span class="max-temp-day" >
+                  12 &deg;
+                </span>
+                <span class=" min-temp-day">
+                 -3 &deg;
+                </span>
               </div>
             </div>
             <div class="day-today">
-              <span class="today">Tue</span> <img class="weather-cond-today" src="rainy-day.png">
+              <span class="today js-today-3">Tue</span> <img class="weather-cond-today" src="rainy-day.png">
               <div>
                 <span class="">12 &deg;</span>
-                <span> -3 &deg;</span>
+                <span class="min-temp-day"> -3 &deg;</span>
               </div>
             </div>
             <div class="day-today">
-              <span class="today">Wed</span> <img class="weather-cond-today" src="heavy-rain.png">
+              <span class="today js-today-4">Wed</span> <img class="weather-cond-today" src="heavy-rain.png">
               <div>
                 <span class="">12 &deg;</span>
-                <span> -3 &deg;</span>
+                <span class="min-temp-day"> -3 &deg;</span>
               </div></div>
             <div class="day-today">
-              <span class="today">Thur</span> <img class="weather-cond-today" src="snow.png">
+              <span class="today js-today-5">Thur</span> <img class="weather-cond-today" src="snow.png">
               <div>
                 <span class="">12 &deg;</span>
-                <span> -3 &deg;</span>
+                <span class="min-temp-day"> -3 &deg;</span>
               </div></div>
             <div class="day-today">
-              <span class="today">Fri</span> <img class="weather-cond-today" src="cloudy.png">
+              <span class="today js-today-6">Fri</span> <img class="weather-cond-today" src="cloudy.png">
               <div>
                 <span class="">12 &deg;</span>
-                <span> -3 &deg;</span>
+                <span class="min-temp-day"> -3 &deg;</span>
               </div>
             </div>
             <div class="day-today">
-              <span class="today">Sat</span> <img class="weather-cond-today" src="sun.png">
+              <span class="today js-today-7">Sat</span> <img class="weather-cond-today" src="sun.png">
               <div>
                 <span class="">12 &deg;</span>
-                <span> -3 &deg;</span>
+                <span class="min-temp-day"> -3 &deg;</span>
               </div>
             </div>
           </div>
@@ -102,7 +108,7 @@
             </div> -->
 
             <div class="uv-card">
-          <h3 class="card-title">UV Index</h3>
+          <span class="card-title">UV Index</span>
           
           <div class="gauge-wrapper">
             <svg viewBox="0 0 200 120" class="gauge-svg">
@@ -199,5 +205,5 @@
     <div></div>
     <!-- <a href="features.html"><button>Go back</button></a> -->
   </body>
-  <!-- <script type="module" src="weather.js"></script> -->
+  <script type="module" src="weather.js"></script>
 </html>
